@@ -1,0 +1,13 @@
+package com.jayshree.array;
+
+public class FirstArrayDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int n[]= {12,34,56,78};
+		
+		
+	}
+
+}

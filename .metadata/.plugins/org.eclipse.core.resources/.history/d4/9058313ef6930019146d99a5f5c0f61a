@@ -1,0 +1,28 @@
+package com.jayshree.array;
+
+import java.util.Scanner;
+
+public class DynamicArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Enter the Array Size :");
+		Scanner sc=new Scanner(System.in);
+		int size=sc.nextInt();
+		
+		int arr[]=new int[size];
+		
+		for(int i=0; i<arr.length; i++)
+		{
+			System.out.println("Enter the "+i+1+"Element :");
+			int ele=sc.nextInt();
+			arr[i]=ele;
+			
+			
+		}
+		
+		
+	}
+
+}

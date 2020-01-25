@@ -1,0 +1,58 @@
+package com.seed;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class LoginDemo extends JFrame //1 
+{
+	JTextField txt_name;
+	JPasswordField txt_pass;
+	JLabel lbl_user,lbl_pass;
+	JButton btn_submit,btn_clear;
+	Container con;
+	public LoginDemo() {
+		
+		//Basic properties of Frame
+		setSize(500,500);
+		setTitle("Login Form");
+		setLayout(new FlowLayout(FlowLayout.CENTER));
+		
+		
+		//2 Create the Object of Component
+		
+		txt_name=new JTextField(10);
+		txt_pass=new JPasswordField(10);
+		lbl_user=new JLabel("Enter username");
+		lbl_pass=new JLabel("Enter Password");
+		btn_submit=new JButton("Submit");
+		btn_clear=new JButton("Clear");
+		
+		//3 add the component to the container		
+		con=getContentPane();
+		con.add(lbl_user);
+		con.add(txt_name);
+		con.add(lbl_pass);
+		con.add(txt_pass);		
+		con.add(btn_submit);
+		con.add(btn_clear);
+	
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LoginDemo obj=new LoginDemo();
+		obj.setVisible(true);
+		
+	}
+
+
+
+
+}

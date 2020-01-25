@@ -1,0 +1,77 @@
+package com.inheritance;
+
+import java.util.Random;
+
+public class MyDate {
+
+	//datamember
+	int dd,mm,yy;
+	
+	public MyDate(int dd, int mm, int yy) {
+	
+		
+		
+		this.dd = dd;
+		this.mm = mm;
+		this.yy = yy;
+	}
+    public MyDate() {
+		// TODO Auto-generated constructor stub
+    	   	
+    	dd=20;
+    	mm=6;
+    	yy=2019;
+	}
+    
+    
+	public void display() {
+		//accessing current object through this reference implicity
+		System.out.println("Date is "+this.dd+"/"+this.mm+"/"+this.yy);
+	}
+	public boolean equals(Object obj)
+	{
+		MyDate d=(MyDate)obj;
+		if(this.dd==d.dd && this.mm==d.mm &&this.yy==d.yy)
+			return true;
+		else
+			
+			return false;
+		
+	}
+	public int hashCode()
+	{
+		System.out.println("in hashCode()");
+		Random r=new Random();
+		//return r.nextInt(100);
+		return dd+mm+yy;
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		// TODO Auto-generated method stub
+		System.out.println("i am in finalize");
+	}
+	@Override
+	public String toString() {
+		return "MyDate [dd=" + dd + ", mm=" + mm + ", yy=" + yy + "]";
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MyDate p1=new MyDate(13, 7, 2019);
+		//p1.display();
+		System.out.println(p1);
+		System.out.println(p1.hashCode());
+		MyDate p2=new  MyDate(13,7,2019);
+		MyDate p3=p2;
+		p1=null;
+		p2=null;
+
+		//p2.display();
+		System.out.println(p2);
+		System.out.println(p2.hashCode());
+		System.out.println(p3.hashCode());
+		System.out.println(p2.equals(p1));
+			}
+
+}

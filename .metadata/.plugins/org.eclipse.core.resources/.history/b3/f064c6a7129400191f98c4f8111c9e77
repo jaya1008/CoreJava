@@ -1,0 +1,45 @@
+package com.inheritance;
+
+public class MyDate {
+
+	int dd,mm,yy;
+	
+	public MyDate(int dd, int mm, int yy) {
+		super();
+		this.dd = dd;
+		this.mm = mm;
+		this.yy = yy;
+	}
+    public MyDate() {
+		// TODO Auto-generated constructor stub
+    	dd=20;
+    	mm=6;
+    	yy=2019;
+	}
+    
+    
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		MyDate d2=(MyDate)obj;
+		if(this.dd==d2.dd &&this.mm==d2.mm&&this.yy==d2.yy)
+		    return true;
+		else
+			return false;
+	}
+	@Override
+	public String toString() {
+		return "MyDate [dd=" + dd + ", mm=" + mm + ", yy=" + yy + "]";
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MyDate d1=new MyDate(20, 6, 2019);
+		System.out.println(d1);
+		MyDate d2=new  MyDate();
+		System.out.println(d2);
+		
+		System.out.println(d1.equals(d2));
+	}
+
+}

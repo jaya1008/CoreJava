@@ -1,0 +1,11 @@
+package com.inheritance;
+
+public class FinalDemo {
+
+	final int f=1;
+	
+	public FinalDemo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

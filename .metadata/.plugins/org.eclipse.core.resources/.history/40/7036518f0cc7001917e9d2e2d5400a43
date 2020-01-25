@@ -1,0 +1,25 @@
+package com.seed;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class LoginDemo extends JFrame
+{
+	JTextField txt_name;
+	JPasswordField txt_pass;
+	JLabel lbl_user,lbl_pass;
+	JButton btn_submit;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+
+
+
+}

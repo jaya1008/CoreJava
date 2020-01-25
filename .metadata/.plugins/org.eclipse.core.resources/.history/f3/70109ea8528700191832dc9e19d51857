@@ -1,0 +1,31 @@
+package com.jayshree.array;
+
+import java.util.Scanner;
+
+public class FirstArrayDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int n[]= {12,34,56,78};
+		for (int i=0; i<n.length; i++)
+		{
+			System.out.println(n[i]);
+		}
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many element you want to add in an Array");
+		
+		int len=sc.nextInt();
+		int d[]=new int[len];
+		for(int i=0; i<len; i++)
+		{
+			
+			System.out.println("Enter the element ");
+			d[i]=sc.nextInt();
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.seed;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class LoginDemo extends JFrame //1 
+{
+	JTextField txt_name;
+	JPasswordField txt_pass;
+	JLabel lbl_user,lbl_pass;
+	JButton btn_submit;
+	public LoginDemo() {
+		// TODO Auto-generated constructor stub
+		//2 Create the Object of Component
+		
+		txt_name=new JTextField(10);
+		txt_pass=new JPasswordField(10);
+		lbl_user=new JLabel("Enter username");
+		lbl_pass=new JLabel("Enter Password");
+		btn_submit=new JButton("Submit");
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+
+
+
+}

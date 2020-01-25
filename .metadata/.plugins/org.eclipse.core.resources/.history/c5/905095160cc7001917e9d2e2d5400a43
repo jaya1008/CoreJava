@@ -1,0 +1,19 @@
+package com.seed;
+
+
+
+
+public class LoginDemo extends JFrame
+{
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+
+
+
+}

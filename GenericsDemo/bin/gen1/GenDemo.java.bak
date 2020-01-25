@@ -1,0 +1,28 @@
+package gen1;
+
+import java.io.*;
+class GenDemo 
+{
+	public static void main(String[] args) 
+	{
+	 Gen<Integer> iob=new Gen<Integer>(10);
+	 Gen<Number> nob=new Gen<Number>(30);
+	 System.out.println(nob);
+	 Integer n1=(Integer) nob.getob();
+	 System.out.println(n1);
+		 iob.showType();
+		 System.out.println("<<<<<<<<<>>>>>>>>> "+iob.getob());
+		
+		Integer i= iob.getob();	 
+		System.out.println(i);
+
+		 Gen<String> strob=new  Gen<String>("Generic Test");
+
+		 strob.showType();
+
+		 String str=strob.getob();
+		 System.out.println("value"+" "+ str);
+	}
+}
+
+

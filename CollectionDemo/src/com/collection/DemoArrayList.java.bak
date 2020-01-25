@@ -1,0 +1,27 @@
+//ckage com.seed;
+
+import java.util.*;
+
+class DemoArrayList 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList al=new ArrayList();
+		System.out.println("initial size of all...." + al.size());
+
+		al.add("c");
+		al.add("a");
+		al.add("b");
+		al.add("d");
+		al.add("e");
+		al.add(1,"a2");
+
+		System.out.println("size after addition..." + al.size());
+		System.out.println("conteny after addition..." + al);
+
+		al.remove("a");
+		al.remove(2);
+
+		System.out.println("content after modification" + al);
+	}
+}

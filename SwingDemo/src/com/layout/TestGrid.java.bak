@@ -1,0 +1,44 @@
+package com.layout;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class TestGrid extends JFrame
+{
+	JLabel LE,LW,LN,LS,LC,LT;
+	JPanel p;
+	public TestGrid()
+	{
+		setSize(300,300);
+		setTitle("My first window");
+		p=new JPanel();
+		p.setSize(200,200);
+		p.setLayout(new GridLayout(2,2));
+		
+		LN=new JLabel("North");
+		LS=new JLabel("South");
+		LE=new JLabel("East");
+		LW=new JLabel("West");
+		LT=new JLabel("Test");
+	
+		Container con=getContentPane();
+		con.add(LT,BorderLayout.EAST);
+		p.add(LS);		p.add(LN);
+		p.add(LE);		p.add(LW);
+		con.add(p);
+
+		
+		
+	}
+
+	public static void main(String[] args)
+	{
+		TestGrid frame=new TestGrid();
+		frame.show();
+	}
+}
+

@@ -1,0 +1,38 @@
+
+package com.adv;
+
+import javax.swing.*;
+
+
+public class TestLayeredPane extends JFrame
+{
+	JLayeredPane pane;
+	public TestLayeredPane()
+	{
+		pane=new JLayeredPane();
+		setLayeredPane(pane);
+		//setContentPane(pane);
+		JInternalFrame jif=new JInternalFrame("student registeration form",true,true,true,true);
+		jif.setSize(250,200 );
+		jif.show();
+		jif.getContentPane().add(new StudentInfo());
+		JInternalFrame jif1=new JInternalFrame("color chooser",true,true,true,true);
+		jif1.setSize(450,400);
+		jif1.setLocation(280, 0);
+		jif1.show();
+		jif1.getContentPane().add(new TestColorChooser());
+		
+		getLayeredPane().add(jif,JLayeredPane.DEFAULT_LAYER);
+		getLayeredPane().add(jif1,JLayeredPane.DRAG_LAYER);
+		
+		setSize(400,400);
+		setVisible(true);
+	}
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		TestLayeredPane tl=new TestLayeredPane();
+
+	}
+
+}
